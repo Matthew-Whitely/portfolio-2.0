@@ -1,0 +1,20 @@
+@import "variable";
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+li button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: $primary2;
+  border: none;
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  p {
+    padding-bottom: 20px;
+  }
+}

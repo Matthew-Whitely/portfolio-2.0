@@ -1,0 +1,39 @@
+@import "setup";
+@import "mainFeature";
+@import "header";
+@import "projects";
+@import "contact";
+
+/* global styles */
+body {
+  background-color: #02131f;
+}
+h1,
+h2,
+p,
+li,
+a {
+  color: #0480da;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 125%;
+}
+.wrapper {
+  max-width: 1240px;
+  width: 90%;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}

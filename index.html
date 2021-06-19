@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+</head>
+
+<body class="bgColor">
+  <header class="wrapper">
+    <h1>Matthew Whitely</h1>
+    <p>Front End Developer</p>
+    <nav>
+      <ul>
+
+        <li class="profileBtn"><button>Profile</button></li>
+        <li class="portfolioBtn"><button>Portfolio</button></li>
+        <li class="contactBtn"><button>Contact</button></li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+
+    <section class="profile hidden wrapper">
+      <p> Growing up in rural Ontario on a farm has made me into the person I am today. Early mornings, long
+        hours, dedication, accountability and above all else hard work is what was ingrained in me at a young
+        age.
+      </p>
+      <p>After 9 years in technical recruitment I knew I was ready to make the jump to web development. I enjoy
+        identifying problems and taking the right course of action to implement the correct solution.
+      </p>
+      <p>
+        Outside of coding I enjoy video game and sports. If I am not watching or playing you can find me on the
+        family farm helping out.
+      </p>
+      <p>I am excited and willing to learn to better myself as programmer and looking forward to help build
+        responsive, accesible, and scalable applications </p>
+    </section>
+    <section class="portfolio hidden wrapper">
+      <h2>PROJECTS</h2>
+      <div class="projectFlexContainer">
+
+
+        <div class="projectFlexColumn">
+
+          <div class="icon">
+            <i class="devicon-html5-plain"></i>
+            <i class="devicon-css3-plain"></i>
+            <i class="devicon-sass-original"></i>
+
+          </div>
+
+          <img src="./images/Harper.PNG" alt="picture of harper project">
+          <div class="live">
+            <a href="https://boring-tereshkova-30e81d.netlify.app/index.html" target="_blank">Live View</a>
+            <p>
+              ||
+            </p>
+            <a href="https://github.com/Matthew-Whitely/MatthewWhitelyProjectOne/tree/main" target="_blank">GitHub</a>
+          </div>
+          <p>Mulit-page PSD conversion made using a client brief and design files. Responsive across
+            devices.
+          </p>
+        </div>
+        <div class="projectFlexColumn">
+          <div class="icon">
+            <i class="devicon-html5-plain"></i>
+            <i class="devicon-css3-plain"></i>
+            <i class="devicon-sass-original"></i>
+            <i class="devicon-javascript-plain"></i>
+
+          </div>
+
+          <img src="./images/project-bort-2.png" alt="picture of project-bort project">
+          <div class="live">
+            <a href="https://boring-tereshkova-30e81d.netlify.app/index.html" target="_blank">Live View</a>
+            <p>
+              ||
+            </p>
+            <a href="https://github.com/Matthew-Whitely/MatthewWhitelyProjectOne/tree/main" target="_blank">GitHub</a>
+          </div>
+          <p>Search app that allows users to sort and search board games
+          </p>
+        </div>
+
+      </div>
+
+      <div class="projectFlexContainer">
+        <div class="projectFlexColumn">
+
+          <div class="icon">
+            <i class="devicon-html5-plain"></i>
+            <i class="devicon-css3-plain"></i>
+            <i class="devicon-react-original"></i>
+          </div>
+
+          <img src="./images/GitHub-jobs.PNG" alt="picture of github api project">
+          <div class="live">
+            <a href="https://boring-tereshkova-30e81d.netlify.app/index.html" target="_blank">Live View</a>
+            <p>
+              ||
+            </p>
+            <a href="https://github.com/Matthew-Whitely/MatthewWhitelyProjectOne/tree/main" target="_blank">GitHub</a>
+          </div>
+          <p>Job Search app that allows users to search programming languages and location
+          </p>
+        </div>
+        <div class="projectFlexColumn">
+          <div class="icon">
+            <i class="devicon-html5-plain"></i>
+            <i class="devicon-css3-plain"></i>
+            <i class="devicon-react-original"></i>
+            <i class="devicon-firebase-plain"></i>
+          </div>
+          <img src="./images/Summer-movies.PNG" alt="picture of summer movies project">
+          <div class="live">
+            <a href="https://boring-tereshkova-30e81d.netlify.app/index.html" target="_blank">Live View</a>
+            <p>
+              ||
+            </p>
+            <a href="https://github.com/Matthew-Whitely/MatthewWhitelyProjectOne/tree/main" target="_blank">GitHub</a>
+          </div>
+          <p>A movies list app that stores data in fire base and sorts movies by gross revenue
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="contact hidden wrapper">
+      <h2>Contact</h2>
+      <div class="contactFlex">
+
+        <div class="contactText">
+          <h3>Thanks for dropping by!</h3>
+          <div class="contactIcon">
+
+            <i class="devicon-linkedin-plain"></i>
+            <i class="devicon-github-original"></i>
+          </div>
+        </div>
+        <form name="contactForm" method="POST" data-netlify="true">
+          <label for="contactName" class="visually-hidden">your name</label>
+          <input type="text" name="contactName" id="contactName" placeholder="Name" />
+
+          <label for="contactEmail" class="visually-hidden">your email</label>
+          <input type="email" name="contactEmail" id="contactEmail" placeholder="Email" />
+
+          <label for="contactComments" class="visually-hidden">tell me about your day</label>
+          <textarea type="text" name="contactComments" id="contactComments"
+            placeholder="Tell me about your day"></textarea>
+
+          <div data-netlify-recaptcha="true" class="captcha"></div>
+
+          <input type="submit" value="SEND MESSAGE" aria-label="submit button" />
+        </form>
+    </section>
+    </div>
+  </main>
+  <footer>
+    <p>created by matthew whitely</p>
+    <form>
+
+    </form>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
