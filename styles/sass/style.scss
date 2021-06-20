@@ -3,10 +3,14 @@
 @import "header";
 @import "projects";
 @import "contact";
+@import "footer";
 
 /* global styles */
 body {
   background-color: #02131f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 h1,
 h2,

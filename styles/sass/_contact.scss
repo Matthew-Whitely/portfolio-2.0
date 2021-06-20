@@ -26,3 +26,15 @@ form {
   flex-direction: column;
   width: 50%;
 }
+label {
+  visibility: hidden;
+}
+input {
+  padding: 10px 5px;
+}
+textarea {
+  margin-bottom: 20px;
+}
+input[type="submit"] {
+  width: 50%;
+}

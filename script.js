@@ -9,6 +9,13 @@ app.profile = document.querySelector(".profile");
 app.portfolio = document.querySelector(".portfolio");
 app.contact = document.querySelector(".contact");
 
+//animations
+app.headerAnimation = document.querySelector(".animationContainer");
+app.tractor = document.querySelector(".tractor");
+app.tow = document.querySelector(".tow");
+app.absoultePosition = document.que;
+
+//button functions
 app.buttonActions = () => {
   app.profileBtn.addEventListener("click", function (e) {
     e.preventDefault();
@@ -32,8 +39,16 @@ app.buttonActions = () => {
   });
 };
 
+app.animation = () => {
+  app.tractor.addEventListener("animationend", () => {
+    app.tractor.remove();
+    app.tow.remove();
+  });
+};
+
 app.init = () => {
   app.buttonActions();
+  app.animation();
 };
 
 app.init();

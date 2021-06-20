@@ -1,0 +1,11 @@
+footer {
+  text-align: center;
+  position: sticky;
+  background-color: $primary2;
+  margin-top: auto;
+
+  p {
+    color: $primary1;
+    padding: 20px 0;
+  }
+}
