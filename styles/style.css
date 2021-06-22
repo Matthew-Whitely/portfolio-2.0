@@ -329,6 +329,11 @@ header p {
 
 .absolutePostion {
   position: relative;
+  z-index: 10;
+}
+
+.absolute {
+  background: #000;
 }
 
 .animationContainer {
@@ -349,7 +354,6 @@ header p {
 }
 
 .absolute {
-  position: relative;
   border: 2px solid #0480da;
   width: 100%;
 }
@@ -394,10 +398,6 @@ header p {
   width: 10px;
   height: 50px;
   background-color: #0480da;
-  -webkit-animation: tractor 3s linear;
-          animation: tractor 3s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .tractor {
@@ -406,11 +406,135 @@ header p {
   opacity: 1;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  background-color: #02131f;
-  -webkit-animation: tractor 3s linear;
-          animation: tractor 3s linear;
+}
+
+.profile {
+  padding-top: 30px;
+  position: relative;
+}
+
+@-webkit-keyframes profileAnimation {
+  0% {
+    top: -700px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes profileAnimation {
+  0% {
+    top: -700px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes profileAnimation2 {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: -700px;
+    opacity: 0;
+  }
+}
+
+@keyframes profileAnimation2 {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: -700px;
+    opacity: 0;
+  }
+}
+
+.profileAnimation2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+  -webkit-animation: profileAnimation2 1s linear;
+          animation: profileAnimation2 1s linear;
+  -webkit-animation-play-state: running, paused;
+          animation-play-state: running, paused;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  margin-top: 25px;
+}
+
+.profileAnimation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+  -webkit-animation: profileAnimation 1s linear;
+          animation: profileAnimation 1s linear;
+  margin-top: 25px;
+}
+
+.profileText {
+  border: 2px solid #0480da;
+  padding: 15px 10px;
+}
+
+.profileText p {
+  padding: 5px 0;
+}
+
+.towProfile {
+  width: 10px;
+  height: 50px;
+  background-color: #0480da;
+}
+
+.tractorProfile {
+  width: 10%;
+  opacity: 1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 h2 {
@@ -425,12 +549,15 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border: solid #0480da 3px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
 }
 
 .projectFlexColumn {
   -webkit-box-shadow: rgba(4, 128, 218, 0.6) 0px 10px 90px;
           box-shadow: rgba(4, 128, 218, 0.6) 0px 10px 90px;
-  border: solid #0480da 3px;
   padding: 10px;
   margin-bottom: 40px;
   width: 48%;
@@ -483,6 +610,108 @@ h2 {
 .live a {
   padding: 0 20px;
   margin: 0;
+}
+
+@-webkit-keyframes portfolioAnimation {
+  0% {
+    top: -2000px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes portfolioAnimation {
+  0% {
+    top: -2000px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes portfolioAnimation2 {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: -2000px;
+    opacity: 0;
+  }
+}
+
+@keyframes portfolioAnimation2 {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: -2000px;
+    opacity: 0;
+  }
+}
+
+.portfolioAnimation2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+  -webkit-animation: portfolioAnimation2 2s linear;
+          animation: portfolioAnimation2 2s linear;
+  -webkit-animation-play-state: running, paused;
+          animation-play-state: running, paused;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  margin-top: 25px;
+}
+
+.portfolioAnimation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+  -webkit-animation: portfolioAnimation 2s linear;
+          animation: portfolioAnimation 2s linear;
+  margin-top: 25px;
 }
 
 .contactFlex {

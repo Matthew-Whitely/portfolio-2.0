@@ -7,11 +7,14 @@ h2 {
 .projectFlexContainer {
   display: flex;
   justify-content: space-between;
+  border: solid $primary2 3px;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 .projectFlexColumn {
   box-shadow: rgba(4, 128, 218, 0.6) 0px 10px 90px;
-  border: solid $primary2 3px;
+  // border: solid $primary2 3px;
   padding: 10px;
   margin-bottom: 40px;
   width: 48%;
@@ -48,4 +51,60 @@ h2 {
     padding: 0 20px;
     margin: 0;
   }
+}
+
+@keyframes portfolioAnimation {
+  0% {
+    top: -2000px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes portfolioAnimation2 {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: -2000px;
+    opacity: 0;
+  }
+}
+
+.portfolioAnimation2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  animation: portfolioAnimation2 2s linear;
+  animation-play-state: running, paused;
+  animation-fill-mode: forwards;
+  // animation-direction: reverse;
+  margin-top: 25px;
+}
+
+.portfolioAnimation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  animation: portfolioAnimation 2s linear;
+
+  // animation-play-state: running, paused;
+  // animation-direction: alternate;
+  margin-top: 25px;
 }

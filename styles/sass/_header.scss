@@ -39,6 +39,10 @@ header {
 }
 .absolutePostion {
   position: relative;
+  z-index: 10;
+}
+.absolute {
+  background: #000;
 }
 .animationContainer {
   display: flex;
@@ -49,9 +53,8 @@ header {
   animation-play-state: running, paused;
 }
 .absolute {
-  position: relative;
   border: 2px solid $primary2;
-
+  // margin-top: 25px;
   width: 100%;
 }
 /* ANIMATIONS */
@@ -77,17 +80,13 @@ header {
   width: 10px;
   height: 50px;
   background-color: $primary2;
-  animation: tractor 3s linear;
-  animation-fill-mode: forwards;
+
 }
 .tractor {
   top: 20px;
   width: 10%;
   opacity: 1;
   transform: rotate(180deg);
-  background-color: $primary1;
-  // animation: tractor 5s linear 1s 1s normal forwards;
-  animation: tractor 3s linear;
-  // animation-play-state: running, paused;
-  animation-fill-mode: forwards;
+
+
 }

@@ -1,0 +1,76 @@
+.profile {
+  padding-top: 30px;
+  position: relative;
+}
+
+@keyframes profileAnimation {
+  0% {
+    top: -700px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes profileAnimation2 {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: -700px;
+    opacity: 0;
+  }
+}
+
+.profileAnimation2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  animation: profileAnimation2 1s linear;
+  animation-play-state: running, paused;
+  animation-fill-mode: forwards;
+  // animation-direction: reverse;
+  margin-top: 25px;
+}
+
+.profileAnimation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  animation: profileAnimation 1s linear;
+  // animation-play-state: running, paused;
+  // animation-direction: alternate;
+  margin-top: 25px;
+}
+.profileText {
+  border: 2px solid $primary2;
+  padding: 15px 10px;
+  p {
+    padding: 5px 0;
+  }
+}
+.towProfile {
+  width: 10px;
+  height: 50px;
+  background-color: $primary2;
+}
+.tractorProfile {
+  width: 10%;
+  opacity: 1;
+  transform: rotate(180deg);
+}
