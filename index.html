@@ -44,23 +44,27 @@
     <section class="profile hidden  wrapper">
       <div class=" profileAnimation">
         <div class="profileText">
-
-          <p> Growing up in rural Ontario on a farm has made me into the person I am today. Early mornings, long
-            hours, dedication, accountability and above all else hard work is what was ingrained in me at a young
-            age.
+          <p class="textC"><mark> Growing up in rural Ontario on a farm has made me into the person I am today. Early
+              mornings, long
+              hours, dedication, accountability and above all else hard work is what was ingrained in me at a young
+              age.</mark>
           </p>
-          <p>After 9 years in technical recruitment I knew I was ready to make the jump to web development. I enjoy
-            identifying problems and taking the right course of action to implement the correct solution.
+          <p class="textC"><mark>After 9 years in technical recruitment I knew I was ready to make the jump to web
+              development. I enjoy
+              identifying problems and taking the right course of action to implement the correct solution.
+            </mark>
           </p>
-          <p>
-            Outside of coding I enjoy video game and sports. If I am not watching or playing you can find me on the
-            family farm helping out.
+          <p class="textC"><mark>
+              Outside of coding I enjoy video game and sports. If I am not watching or playing you can find me on the
+              family farm helping out.</mark>
           </p>
-          <p>I am excited and willing to learn to better myself as programmer and looking forward to help build
-            responsive, accesible, and scalable applications </p>
+          <p class="textC"><mark>I am excited and willing to learn to better myself as programmer and looking forward to
+              help
+              build
+              responsive, accesible, and scalable applications </mark></p>
         </div>
-        <div class="towProfile"></div>
-        <div class="tractorProfile">
+        <div class="tow"></div>
+        <div class="tractor">
           <img src="./images/imageonline-co-whitebackgroundremoved.png" alt="blue tractor">
         </div>
       </div>
@@ -156,8 +160,8 @@
             </p>
           </div>
         </div>
-        <div class="towProfile"></div>
-        <div class="tractorProfile">
+        <div class="tow"></div>
+        <div class="tractor">
           <img src="./images/imageonline-co-whitebackgroundremoved.png" alt="blue tractor">
         </div>
       </div>
@@ -173,17 +177,19 @@
           <div class="contactText">
             <h3>Thanks for dropping by!</h3>
             <div class="contactIcon">
-
-              <i class="devicon-linkedin-plain"></i>
-              <i class="devicon-github-original"></i>
+              <a href="https://www.linkedin.com/in/matthew-whitely/" target="_blank">
+                <i class="devicon-linkedin-plain"></i>
+              </a>
+              <a href="https://github.com/Matthew-Whitely" target="_blank">
+                <i class="devicon-github-original"></i></a>
             </div>
           </div>
           <form name="contactForm" method="POST" data-netlify="true">
             <label for="contactName" class="visually-hidden">your name</label>
-            <input type="text" name="contactName" id="contactName" placeholder="Name" />
+            <input type="text" name="contactName" id="contactName" placeholder="Name" required />
 
             <label for="contactEmail" class="visually-hidden">your email</label>
-            <input type="email" name="contactEmail" id="contactEmail" placeholder="Email" />
+            <input type="email" name="contactEmail" id="contactEmail" placeholder="Email" required />
 
             <label for="contactComments" class="visually-hidden">tell me about your day</label>
             <textarea type="text" name="contactComments" id="contactComments"

@@ -57,12 +57,36 @@
   // animation-direction: alternate;
   margin-top: 25px;
 }
+
 .profileText {
   border: 2px solid $primary2;
   padding: 15px 10px;
-  p {
-    padding: 5px 0;
-  }
+  height: 100vh;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 45, 45, 0.52),
+      rgba(74, 141, 230, 0.3)
+    ),
+    url(".././images/tractor-1000.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+.textC {
+  // color: white;
+  font-weight: bold;
+  padding: 20px 25px 10px 25px;
+  line-height: 150%;
+  margin-left: auto;
+  width: 50%;
+  // shape-outside: inset(grey);
+  // background: grey;
+}
+mark {
+  background-color: black;
+  color: white;
 }
 .towProfile {
   width: 10px;

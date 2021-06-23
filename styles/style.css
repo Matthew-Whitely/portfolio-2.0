@@ -406,6 +406,7 @@ header p {
   opacity: 1;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  margin-bottom: 15px;
 }
 
 .profile {
@@ -518,10 +519,27 @@ header p {
 .profileText {
   border: 2px solid #0480da;
   padding: 15px 10px;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 45, 45, 0.52)), to(rgba(74, 141, 230, 0.3))), url(".././images/tractor-1000.jpg");
+  background-image: linear-gradient(to bottom, rgba(46, 45, 45, 0.52), rgba(74, 141, 230, 0.3)), url(".././images/tractor-1000.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
-.profileText p {
-  padding: 5px 0;
+.textC {
+  font-weight: bold;
+  padding: 20px 25px 10px 25px;
+  line-height: 150%;
+  margin-left: auto;
+  width: 50%;
+}
+
+mark {
+  background-color: black;
+  color: white;
 }
 
 .towProfile {
@@ -800,6 +818,7 @@ input {
 
 textarea {
   margin-bottom: 20px;
+  resize: none;
 }
 
 input[type="submit"] {
