@@ -775,6 +775,10 @@ h2 {
   font-size: 2rem;
 }
 
+.captcha {
+  margin-bottom: 20px;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
