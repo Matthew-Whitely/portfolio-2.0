@@ -23,8 +23,8 @@ app.buttonActions = () => {
   app.profileBtn.addEventListener("click", function (e) {
     e.preventDefault();
     app.profile.classList.remove("hidden");
-    app.profileAnimation.classList.toggle("profileAnimation2");
-    app.profileAnimation.classList.toggle("profileAnimation");
+    // // app.profileAnimation.classList.toggle("profileAnimation2");
+    // app.profileAnimation.classList.toggle("profileAnimation");
     app.portfolio.classList.add("hidden");
     app.contact.classList.add("hidden");
     app.tractor.remove();
@@ -37,9 +37,11 @@ app.buttonActions = () => {
 
   app.portfolioBtn.addEventListener("click", function (e) {
     e.preventDefault();
+    app.tractor.remove();
+    app.tow.remove();
     //portfolio animation
-    app.portfolioAnimation.classList.toggle("portfolioAnimation");
-    app.portfolioAnimation.classList.toggle("portfolioAnimation2");
+    // app.portfolioAnimation.classList.toggle("portfolioAnimation");
+    // app.portfolioAnimation.classList.toggle("portfolioAnimation2");
     app.portfolio.classList.remove("hidden");
     //making sure the other sections are hidden
     app.profile.classList.add("hidden");
@@ -47,13 +49,13 @@ app.buttonActions = () => {
     //profile animation so when you click it it will start for the beggining
     app.profileAnimation.classList.remove("profileAnimation");
     app.profileAnimation.classList.add("profileAnimation2");
-    app.tractor.remove();
-    app.tow.remove();
   });
 
   app.contactBtn.addEventListener("click", function (e) {
     e.preventDefault();
-    app.contact.classList.toggle("hidden");
+    app.tractor.remove();
+    app.tow.remove();
+    app.contact.classList.remove("hidden");
     app.profile.classList.add("hidden");
     app.portfolio.classList.add("hidden");
 
@@ -67,10 +69,7 @@ app.buttonActions = () => {
 };
 
 app.animation = () => {
-  app.tractor.addEventListener("animationend", () => {
-    app.tractor.remove();
-    app.tow.remove();
-  });
+  app.tractor.addEventListener("animationend", () => {});
 };
 
 app.init = () => {

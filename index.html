@@ -42,7 +42,7 @@
   <main>
 
     <section class="profile hidden  wrapper">
-      <div class=" profileAnimation2">
+      <div class=" profileAnimation">
         <div class="profileText">
 
           <p> Growing up in rural Ontario on a farm has made me into the person I am today. Early mornings, long
@@ -67,9 +67,9 @@
     </section>
     <section class="portfolio hidden  wrapper">
 
-      <div class="portfolioAnimation2">
+      <div class="portfolioAnimation">
         <h2>PROJECTS</h2>
-        <div class="projectFlexContainer">
+        <div class=" projectFlexContainer">
 
 
           <div class="projectFlexColumn">
@@ -165,32 +165,41 @@
 
 
     <section class="contact hidden wrapper">
-      <h2>Contact</h2>
-      <div class="contactFlex">
+      <div class="contactAnimation">
 
-        <div class="contactText">
-          <h3>Thanks for dropping by!</h3>
-          <div class="contactIcon">
+        <h2>Contact</h2>
+        <div class="contactFlex">
 
-            <i class="devicon-linkedin-plain"></i>
-            <i class="devicon-github-original"></i>
+          <div class="contactText">
+            <h3>Thanks for dropping by!</h3>
+            <div class="contactIcon">
+
+              <i class="devicon-linkedin-plain"></i>
+              <i class="devicon-github-original"></i>
+            </div>
           </div>
+          <form name="contactForm" method="POST" data-netlify="true">
+            <label for="contactName" class="visually-hidden">your name</label>
+            <input type="text" name="contactName" id="contactName" placeholder="Name" />
+
+            <label for="contactEmail" class="visually-hidden">your email</label>
+            <input type="email" name="contactEmail" id="contactEmail" placeholder="Email" />
+
+            <label for="contactComments" class="visually-hidden">tell me about your day</label>
+            <textarea type="text" name="contactComments" id="contactComments"
+              placeholder="Tell me about your day"></textarea>
+
+            <div data-netlify-recaptcha="true" class="captcha"></div>
+
+            <input type="submit" value="SEND MESSAGE" aria-label="submit button" />
+          </form>
+
         </div>
-        <form name="contactForm" method="POST" data-netlify="true">
-          <label for="contactName" class="visually-hidden">your name</label>
-          <input type="text" name="contactName" id="contactName" placeholder="Name" />
-
-          <label for="contactEmail" class="visually-hidden">your email</label>
-          <input type="email" name="contactEmail" id="contactEmail" placeholder="Email" />
-
-          <label for="contactComments" class="visually-hidden">tell me about your day</label>
-          <textarea type="text" name="contactComments" id="contactComments"
-            placeholder="Tell me about your day"></textarea>
-
-          <div data-netlify-recaptcha="true" class="captcha"></div>
-
-          <input type="submit" value="SEND MESSAGE" aria-label="submit button" />
-        </form>
+        <div class="tow"></div>
+        <div class="tractor">
+          <img src="./images/imageonline-co-whitebackgroundremoved.png" alt="blue tractor">
+        </div>
+      </div>
     </section>
     </div>
   </main>

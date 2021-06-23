@@ -1,0 +1,9 @@
+@media (max-width: 760px) {
+  //project.scss changing the view
+  .projectFlexContainer {
+    flex-direction: column;
+  }
+  .projectFlexColumn {
+    width: 100%;
+  }
+}

@@ -552,6 +552,9 @@ h2 {
   border: solid #0480da 3px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   padding: 20px;
 }
 
@@ -714,6 +717,28 @@ h2 {
   margin-top: 25px;
 }
 
+.contactAnimation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+  -webkit-animation: portfolioAnimation 2s linear;
+          animation: portfolioAnimation 2s linear;
+  width: 100%;
+  margin-top: 25px;
+}
+
 .contactFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -721,6 +746,12 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid #0480da 3px;
+  padding: 20px;
+  width: 100%;
 }
 
 .contactText {
@@ -830,4 +861,16 @@ a {
 
 li {
   list-style-type: none;
+}
+
+@media (max-width: 760px) {
+  .projectFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectFlexColumn {
+    width: 100%;
+  }
 }
