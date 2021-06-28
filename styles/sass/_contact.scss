@@ -1,3 +1,17 @@
+@keyframes contactAnimation {
+  0% {
+    top: -800px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 .contactAnimation {
   display: flex;
   flex-direction: column;
@@ -5,7 +19,7 @@
   justify-content: center;
   position: relative;
   z-index: 1;
-  animation: portfolioAnimation 2s linear;
+  animation: contactAnimation 1.5s linear;
   width: 100%;
 
   // animation-play-state: running, paused;

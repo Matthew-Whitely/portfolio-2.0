@@ -416,7 +416,7 @@ header p {
 
 @-webkit-keyframes profileAnimation {
   0% {
-    top: -700px;
+    top: -1200px;
     opacity: 0;
   }
   20% {
@@ -430,7 +430,7 @@ header p {
 
 @keyframes profileAnimation {
   0% {
-    top: -700px;
+    top: -1200px;
     opacity: 0;
   }
   20% {
@@ -440,59 +440,6 @@ header p {
     top: 0;
     opacity: 1;
   }
-}
-
-@-webkit-keyframes profileAnimation2 {
-  0% {
-    top: 0;
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    top: -700px;
-    opacity: 0;
-  }
-}
-
-@keyframes profileAnimation2 {
-  0% {
-    top: 0;
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    top: -700px;
-    opacity: 0;
-  }
-}
-
-.profileAnimation2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  z-index: 1;
-  -webkit-animation: profileAnimation2 1s linear;
-          animation: profileAnimation2 1s linear;
-  -webkit-animation-play-state: running, paused;
-          animation-play-state: running, paused;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  margin-top: 25px;
 }
 
 .profileAnimation {
@@ -533,13 +480,12 @@ header p {
   font-weight: bold;
   padding: 20px 25px 10px 25px;
   line-height: 150%;
-  margin-left: auto;
-  width: 50%;
 }
 
 mark {
   background-color: black;
   color: white;
+  padding: 2px;
 }
 
 .towProfile {
@@ -735,6 +681,34 @@ h2 {
   margin-top: 25px;
 }
 
+@-webkit-keyframes contactAnimation {
+  0% {
+    top: -800px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes contactAnimation {
+  0% {
+    top: -800px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 .contactAnimation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -751,8 +725,8 @@ h2 {
           justify-content: center;
   position: relative;
   z-index: 1;
-  -webkit-animation: portfolioAnimation 2s linear;
-          animation: portfolioAnimation 2s linear;
+  -webkit-animation: contactAnimation 1.5s linear;
+          animation: contactAnimation 1.5s linear;
   width: 100%;
   margin-top: 25px;
 }
@@ -896,4 +870,18 @@ li {
   .projectFlexColumn {
     width: 100%;
   }
+}
+
+@media (max-width: 610px) {
+  .textC {
+    font-weight: bold;
+    padding: 10px 15px 5px 15px;
+    line-height: 150%;
+    font-size: 0.7rem;
+  }
+}
+
+/*TOPAGRAPHY*/
+h1 {
+  font-size: 4rem;
 }
